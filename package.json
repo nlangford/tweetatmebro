@@ -1,0 +1,31 @@
+{
+  "name": "tweetatmebro",
+  "version": "0.0.1",
+  "description": "Twitter bot with triggers",
+  "keywords": [
+    "Twitter",
+    "express",
+    "passport"
+  ],
+  "author": "Neil Langford",
+  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nlangford/tweetatmebro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nlangford/tweetatmebro/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.3.5",
+    "ejs": "^2.3.3",
+    "express": "^4.13.1",
+    "express-session": "^1.11.3",
+    "morgan": "^1.6.1",
+    "passport": "^0.2.2",
+    "passport-twitter": "^1.0.3",
+    "twit": "^2.2.5"
+  }
+}
