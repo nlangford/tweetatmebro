@@ -140,7 +140,7 @@ app.post('/tweet', function(req, res){
         console.log(req.body.timeout);
         setInterval(function(){
             tweetThis(req.body.text, userToken, userTokenSecret);
-        }, req.body.timeout*1000);
+        }, req.body.timeout*(1000*60));
     } else{
         tweetThis(req.body.text, userToken, userTokenSecret);
     }

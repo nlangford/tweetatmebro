@@ -10,7 +10,8 @@
 <form method="post" action="/tweet">
     <label for="tweet">Text</label>
     <input id="tweet" type="text" name="text"/>
-    <label for="timeout">Every X Seconds (0) for 1 time tweet</label>
-    <input id="timeout" type="number" value="0" name="timeout"/>
+    <label for="timeout">Every X minutes (0 for 1 time tweet)*</label>
+    <input id="timeout" type="number" value="0" name="timeout" step="15"/>
     <button type="submit">Post Tweet</button>
 </form>
+<span>*Your account will be limited to 300 tweets per day by Twitter, be careful.</span>
