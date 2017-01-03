@@ -1,7 +1,7 @@
 var express = require('express');
 var passport = require('passport');
-var Strategy = require('passport-twitter').Strategy;
 var Twit = require('twit');
+var Strategy = require('passport-twitter').Strategy;
 var userToken = '';
 var userTokenSecret = '';
 
@@ -125,7 +125,7 @@ app.get('/login/twitter',
 app.get('/login/twitter/return',
     passport.authenticate('twitter', {failureRedirect: '/login'}),
     function (req, res) {
-        res.redirect('/');
+        res.redirect('/profile');
     });
 
 app.get('/profile',
@@ -136,7 +136,7 @@ app.get('/profile',
 
 app.post('/tweet', function(req, res){
     console.log('lolol:', req.body);
-    if(req.body.timeout){
+    if(req.body.timeout != 0){
         console.log(req.body.timeout);
         setInterval(function(){
             tweetThis(req.body.text, userToken, userTokenSecret);

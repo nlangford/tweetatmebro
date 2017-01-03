@@ -7,6 +7,9 @@
     "express",
     "passport"
   ],
+  "scripts": {
+    "start": "node server.js"
+  },
   "author": "Neil Langford",
   "license": "Unlicense",
   "repository": {
@@ -15,6 +18,9 @@
   },
   "bugs": {
     "url": "https://github.com/nlangford/tweetatmebro/issues"
+  },
+  "engines": {
+    "node": "6.9.2"
   },
   "dependencies": {
     "body-parser": "^1.13.2",
