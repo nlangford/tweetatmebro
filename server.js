@@ -138,6 +138,7 @@ app.post('/tweet', function(req, res){
     console.log('lolol:', req.body);
     if(req.body.timeout != 0){
         console.log(req.body.timeout);
+        tweetThis(req.body.text, userToken, userTokenSecret);
         setInterval(function(){
             tweetThis(req.body.text, userToken, userTokenSecret);
         }, req.body.timeout*(1000*60));
