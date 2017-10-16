@@ -10,8 +10,8 @@ var userTokenSecret = '';
 
 function tweetThis(text, token, secret) {
     var config = {
-        consumer_key: 'Ax9kPHdetJSNOKhc4g1V94p8y',
-        consumer_secret: 'vOu2FXQCe3sO1LBrzB1tHVgqSsyj23ZGWe0QLRXT4Ww2DYvK26',
+        consumer_key: 'REDACTED',
+        consumer_secret: 'REDACTED',
         access_token: token,
         access_token_secret: secret
     };
@@ -51,8 +51,8 @@ console.log('Tweet@Me Bro');
 // with a user object, which will be set at `req.user` in route handlers after
 // authentication.
 passport.use(new Strategy({
-        consumerKey: 'Ax9kPHdetJSNOKhc4g1V94p8y',
-        consumerSecret: 'vOu2FXQCe3sO1LBrzB1tHVgqSsyj23ZGWe0QLRXT4Ww2DYvK26',
+        consumerKey: 'REDACTED',
+        consumerSecret: 'REDACTED',
         callbackURL: 'http://127.0.0.1:3000/login/twitter/return'
     },
     function (token, tokenSecret, profile, cb) {
